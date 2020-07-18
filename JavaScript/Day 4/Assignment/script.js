@@ -100,9 +100,9 @@ if (sales>=0 && sales<=5000)
 else if(sales>=5001 && sales<=10000)
     console.log("Total Commission",sales*(5/100))    
 else if(sales>=10001 && sales<=20000)
-    console.log("Total Commission",sales*(sales*(7/100)))
+    console.log("Total Commission",(sales*(7/100))
 else if(sales>20000)
-    console.log("Total Commission",sales*(sales*10/100))
+    console.log("Total Commission",(sales*(10/100))
 
 /*6. Rewrite the function using '?' or '||'
 Write a loop which prompts for a number greater than 100. If the visitor enters another number – ask them
