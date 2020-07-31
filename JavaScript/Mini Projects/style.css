@@ -1,0 +1,44 @@
+body{
+    background:black;
+    color:wheat;
+}
+.time{
+    background:none;
+    border:none;
+    outline:none;
+    border:1px solid wheat;
+}
+.btn{
+    background: local;
+    outline: none;
+    border-radius:22px;
+}
+.time,::placeholder,.btn{
+    padding:0.7%;
+    font-size:larger;
+    color:wheat;
+}
+.p{
+    font-size:2em;
+}
+ol{
+    font-size: 2em;
+}
+.left,.right{
+    height:80%;
+    width:45%;
+    padding:1%;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.down{
+    position: absolute;;
+    height:40%;
+    width:80%;
+    padding:1%;
+    bottom:7%;
+}
