@@ -1,0 +1,147 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs28\lang9 Artificial Intelligence & Machine Learning | Batch 1 - Day 22 Overview\par
+DAY 22 AGENDA\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0\fs24 Decision Tree and Random Forest\par
+{\pntext\f1\'B7\tab}Decision Tree analysis\par
+{\pntext\f1\'B7\tab}Why Decision Tree\par
+{\pntext\f1\'B7\tab}Decision Tree Classification\par
+{\pntext\f1\'B7\tab}Decision Tree Prediction\par
+{\pntext\f1\'B7\tab}Variable Type and Split Type\par
+{\pntext\f1\'B7\tab}Methods Of Measure of Node Impurity\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Decision Tree and Random Forest \b0\fs22\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b\fs24 Classification Technique\b0  - Decision Tree \par
+
+\pard\li720\sa200\sl276\slmult1\b Dependent Variable \b0 - Categorical\par
+\b Independent Variable \b0 - Categorical and Continuous\par
+\b Purpose of Algorithm \b0 - It is a classification Technique used to classify the records in a Pictorial format with the help of gini index \par
+
+\pard\sa200\sl276\slmult1       2.   \b Classification Technique\b0  - Random Forest \par
+
+\pard\li720\sa200\sl276\slmult1\b Dependent Variable \b0 - Categorical\par
+\b Independent Variable \b0 - Categorical and Continuous\par
+\b Purpose of Algorithm \b0 - It is an n-sample of decision tree algorithm also used to find the important variable for decision tree.\fs22\tab\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Decision Tree Analysis :\b0\fs22\par
+\fs24 It consists of\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Decision Tree Classification\par
+{\pntext\f0 2.\tab}Decision Tree Prediction\par
+{\pntext\f0 3.\tab}Variable Type and Split Type\par
+{\pntext\f0 4.\tab}The measure of Node Impurity\par
+{\pntext\f0 5.\tab}Decision Tree Induction Algorithm -ID3, CART\par
+{\pntext\f0 6.\tab}Practical Issue with decision tree\par
+{\pntext\f0 7.\tab}Ensemble Method-Random Forest\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Why Decision Tree :\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 It is an algorithm that is helpful for classification and prediction.\par
+{\pntext\f1\'B7\tab}This is the only one that is useful for both classifications as well as prediction.\par
+{\pntext\f1\'B7\tab}It is a technique used to classify the record in a pictorial format.\par
+{\pntext\f1\'B7\tab}A way to visualize the records.\par
+{\pntext\f1\'B7\tab}Here the target/Dependent variable should be discrete that is categorical.\par
+{\pntext\f1\'B7\tab}Input/independent Variables should be categorical and continuous.\fs22\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Decision tree Classification:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0\fs24 We have to check here if the owner has a riding mower.\par
+{\pntext\f1\'B7\tab}The Independent variable is the income and lot size.\par
+{\pntext\f1\'B7\tab}The dependent or target variable is ownership of riding mower or not.\par
+{\pntext\f1\'B7\tab}We take an average of lot size.\par
+{\pntext\f1\'B7\tab}We will plot a scatter plot and check how many are greater than the average we got of the lot size.\par
+{\pntext\f1\'B7\tab}But using this we can not predict if one is an owner or not.\par
+{\pntext\f1\'B7\tab}We will now make the second split based on income by taking the average of the income.\par
+{\pntext\f1\'B7\tab}But we cannot conclude that if the income is more than average have the ownership.\par
+{\pntext\f1\'B7\tab}One box here that is lot size less than average, as well as income more than average, have owners in it.\par
+{\pntext\f1\'B7\tab}We need to do multiple splits till the time we get the same types of characteristics in the boxes.\par
+{\pntext\f1\'B7\tab}We can do multiple split if we have 2 or 3 variables.\par
+{\pntext\f1\'B7\tab}For more variables, we need to do it with the help of the tree structure by drawing a decision tree.\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Drawing decision Tree:\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 First, we will take the lot size that is an independent variable.\par
+{\pntext\f1\'B7\tab}We then split 2 children based on less than or greater than the average.\par
+{\pntext\f1\'B7\tab}The less than average will we on the left side and greater than or right hand.\par
+{\pntext\f1\'B7\tab}We will then look for the average income of the lesser than and greater than values.\par
+{\pntext\f1\'B7\tab}We need to go for more splits.\par
+{\pntext\f1\'B7\tab}We then split it into 2 more child nodes based on the average income.\par
+{\pntext\f1\'B7\tab}Then we say that people with lot sizes less than average and income more than average are owners.\par
+{\pntext\f1\'B7\tab}Further splitting till all the nodes have the same characteristic.\par
+{\pntext\f1\'B7\tab}We here get 9 nodes in the end so we infer that we have 9 rules.\fs22\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Decision Tree Prediction:\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 Now we will see how it is useful for prediction.\par
+{\pntext\f1\'B7\tab}It is a training data set that is the past data set .\par
+{\pntext\f1\'B7\tab}In this example, we have 5 columns that tell us if someone was cheated or not.\par
+{\pntext\f1\'B7\tab}So cheated or not is the dependent variable.\par
+{\pntext\f1\'B7\tab}Refund, taxable income, marital status are the independent variables.\par
+{\pntext\f1\'B7\tab}Here 2 are categorical and taxable income is continuous.\par
+{\pntext\f1\'B7\tab}In the data set, we can see that the rows with refund yes have no  in the cheat column\par
+{\pntext\f1\'B7\tab}But we cannot conclude the other way around.\par
+{\pntext\f1\'B7\tab}Next, we can consider marital status.\par
+{\pntext\f1\'B7\tab}So in the refund, no and marital status married we will make further splits.\par
+{\pntext\f1\'B7\tab}We will further make more nodes and decide if cheated yes or no.\par
+{\pntext\f1\'B7\tab}WE can make n number of trees of the same data set taking different independent variables as the head nodes and carrying out further tree making.\par
+{\pntext\f1\'B7\tab}We then create a model and using this decision tree model we can use test data set and predict the unseen future values.\par
+{\pntext\f1\'B7\tab}So the decision tree is both used for classification and prediction.\fs22\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Variable Type and Split Type:\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 We will now see the different variable types and split types.\par
+{\pntext\f1\'B7\tab}In variable, we have Nominal, Ordinal, and Continuous types of variables.\par
+{\pntext\f1\'B7\tab}In split, we have two types of 2-way split and multi-way split.\par
+{\pntext\f1\'B7\tab}Splitting based on nominal type is used for normal identification.\par
+{\pntext\f1\'B7\tab}Nominal means defining variables in a distinct way.\par
+{\pntext\f1\'B7\tab}Multi-way has more than 2 types and binary has only 2 types of classification.\par
+{\pntext\f1\'B7\tab}The ordinal scale is used when we have to rank the objects for example small, medium, large, etc.\par
+{\pntext\f1\'B7\tab}Continuous is when the variables are not predefined for example income that can be anything.\par
+{\pntext\f1\'B7\tab}In two way split, we can define greater than or less than average but in multi-way we can define different ranges.\fs22\par
+
+\pard\sa200\sl276\slmult1\b\fs28 How to determine Best Split :\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 We can decide the best split based on the nature of data.\par
+{\pntext\f1\'B7\tab}For binary-valued feature, we can just go for the binary split\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Measure of Node Impurity:\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 To choose the right best split we go for a measure of node impurity.\par
+{\pntext\f1\'B7\tab}It is measured based on homogenetic characteristics.\par
+{\pntext\f1\'B7\tab}For example, in 10 records we have 5:5 divided into a different category so these are heterogenetic in nature.\par
+{\pntext\f1\'B7\tab}In the next example, we have 9:1 distribution in categories we say it is homogenetic in nature.\par
+{\pntext\f1\'B7\tab}If we have a high degree of impurity we say if it is homogenetic or heterogenetic.\par
+{\pntext\f1\'B7\tab}We can measure node impurity based on the Gini index, Entropy, and Misclassification error.\par
+{\pntext\f1\'B7\tab}We have a formula for finding the Gini index it ranges from 0-0.5.\par
+{\pntext\f1\'B7\tab}If the Gini index is close to 0 there is least impurity.\par
+{\pntext\f1\'B7\tab}So lesser the Gini index more pure the data is.\par
+{\pntext\f1\'B7\tab}Entropy is also used to measure the impurity of data, it ranges from 0-1.\par
+{\pntext\f1\'B7\tab}We also have a specific formula for calculating the entropy of the data.\par
+{\pntext\f1\'B7\tab}If entropy is 0 impurity is less and purity is high.\par
+{\pntext\f1\'B7\tab}Misclassification error is the third method it ranges from 0-0.5.\par
+{\pntext\f1\'B7\tab}It has a formula that can be used to manually calculate the classification error.\par
+{\pntext\f1\'B7\tab}Lesser the Misclassification error lesser the impurity and greater the purity in the data.\par
+{\pntext\f1\'B7\tab}Out of 3 methods Gini index gives out the highest accuracy\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Decision Tree Induction Algorithm -ID3,CART:\b0\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 ID3 is the Iterative Dichotomous method.\par
+{\pntext\f1\'B7\tab}If we go for the binary split we can use the ID3 algorithm.\par
+{\pntext\f1\'B7\tab}Other 2 that are categorical and continuous we will go for the CART method.\par
+{\pntext\f1\'B7\tab}Dichotomous means 2.\par
+{\pntext\f1\'B7\tab}CART is a classification and regression tree.\par
+{\pntext\f1\'B7\tab}If the dependent/target variable has more than 2 categories we go for CART.\par
+{\pntext\f1\'B7\tab}When we go for classification that is dependent variable is categorical we go for Gini index and entropy and the other one for continuous one.\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Practical Issues of decision Tree:\par
+\b0\fs24 What are the difficulties in the decision tree?\par
+Difficulties like overfitting, underfitting, and others.\par
+Will discuss more in the next lecture.\par
+}
+ 

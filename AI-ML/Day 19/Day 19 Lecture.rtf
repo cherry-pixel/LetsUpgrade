@@ -1,0 +1,151 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs32\lang9 Artificial Intelligence & Machine Learning | Batch 1 - Day 19 Overview\par
+\fs28 DAY 19 AGENDA \fs32\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0\fs24 Linear Regression\par
+{\pntext\f1\'B7\tab}Math Behind Linear Regression\par
+{\pntext\f1\'B7\tab}Error Estimation in Linear Regression\par
+{\pntext\f1\'B7\tab}Steps For Creating a model\par
+{\pntext\f1\'B7\tab}Hands-on Linear Regression in Python\par
+{\pntext\f1\'B7\tab}Model Building and Testing in Python\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Linear Regression:\fs32\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0\fs24 ML is classified in supervised learning and unsupervised learning.\par
+{\pntext\f1\'B7\tab}Supervised learning has 2 aspects one is classification and regression.\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li1080\sa200\sl276\slmult1 The regression problem is the one where the outcome of the model is numerical values for example stock market, real state prices, etc.\par
+{\pntext\f0 2.\tab}The classification problem is the one when the outcome deals with categorical values for example high, low, or the classification in the bank if you are default customer or not.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Supervised learning is when you have a target.\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Algorithms to Solve Regression problem :\par
+\b0\fs24 We use linear regression to solve regression problems as this one gives out very good output and precise outputs.\fs22\par
+\b\fs28 The Math behind  Linear Regression :\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0\fs24 Line equation y=mx+c is an equation to generate a straight line to represent data for independent and dependent data.\par
+{\pntext\f0 2.\tab}Using this line we can have a prediction of future possibilities.\par
+{\pntext\f0 3.\tab}Looking at the maths behind the algorithm we can have a better insight as to how it works and how it will react to a specific problem.\par
+{\pntext\f0 4.\tab}X here is the input or the independent variable and y it output that is the dependent variable.c is the constant variable and m is the slope.\par
+{\pntext\f0 5.\tab}For all the problems we find the m and c values and use them for further forecasting.\par
+{\pntext\f0 6.\tab}We can predict the value for y you have accomplished the forecasting.\par
+{\pntext\f0 7.\tab}After finding the values of m and c values we can use it and the value of x in the equation to predict future values.\par
+{\pntext\f0 8.\tab}To estimate the value of slope there is a formula that has been defined.\par
+{\pntext\f0 9.\tab}For the given data we will find out x,y,xy,x2, and summation of x and y,xy, and x2.\par
+{\pntext\f0 10.\tab}Using this in the formula we can get the value of x.\par
+{\pntext\f0 11.\tab}For finding c we have another formula.\par
+{\pntext\f0 12.\tab}Y is the value we have and y\rquote  is the value we will be evaluating.\par
+{\pntext\f0 13.\tab}We will plot a graph for the data that has already been provided that is for the values we already know.\par
+{\pntext\f0 14.\tab}We will plot the actual and predicted values.\par
+{\pntext\f0 15.\tab}After plotting a graph and marking all the points we will get a lie that passes through all the points and the equation of the line is the one we have found out using the math formulae.\par
+{\pntext\f0 16.\tab}On the graph, we can check the forecasted value by tracking where the x coordinate meets the line.\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Linear Regression Performance Metrics /Cost Function /Error Estimation :\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0\fs24 After understanding the math behind the algorithm we need to look into the performance of the algorithm.\par
+{\pntext\f0 2.\tab}Performance is measured based on the error that the algorithm does in forecasting.\par
+{\pntext\f0 3.\tab}In the math we have seen the  y is 2 and the predicted y is 2.2 so here we can see there are some errors.\par
+{\pntext\f0 4.\tab}Error=y-y\rquote  (in the example we see it is 2-2.2).\par
+{\pntext\f0 5.\tab}So at times like in our example, we get the error in negative.\par
+{\pntext\f0 6.\tab}To get the total error we have to find the difference between all the data points we have.\par
+{\pntext\f0 7.\tab}The total error is the summation(y-y\rquote ) that is for all the data point we will sum up the result.\par
+{\pntext\f0 8.\tab}We then calculate the mean or the average error that is dividing the total error by the number of outputs.\par
+{\pntext\f0 9.\tab}To remove the negative sign we first square the value and then to retain the original value we just take the root of the number.\par
+{\pntext\f0 10.\tab}There are possibilities that there can be negative values in the mean error so to remove that we find mean squared error.\par
+{\pntext\f0 11.\tab}Mean squared error is the square of the mean error.\par
+{\pntext\f0 12.\tab}We can also calculate the mean absolute error by using the modulus to get rid of the sign.\par
+{\pntext\f0 13.\tab}We can find the root mean square error by taking the square root of the mean square error.\par
+{\pntext\f0 14.\tab}We find the Rsquare Value to properly decide the error percentage of the algorithm.\par
+{\pntext\f0 15.\tab}In R2  numerator gives the variance of each point and the denominator gives the total variability.\par
+{\pntext\f0 16.\tab}R2   gives out the performance percentage of the algorithm.\par
+{\pntext\f0 17.\tab}R2 has a range between 0 to 1.\par
+{\pntext\f0 18.\tab}Adjusted R2 has a bit of change in the formula we divide the numerator by (n-p-1) and denominator by (n-1).\par
+{\pntext\f0 19.\tab}We use adjusted R2  when we want a better insight or a perfect result of the algorithm.\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Steps for Creating a Model  :\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0\fs24 We need to have the data.\par
+{\pntext\f0 2.\tab}We need to have a fixed objective.\par
+{\pntext\f0 3.\tab}Perform EDA on the data.\par
+{\pntext\f0 4.\tab}Try to plot the data with Matplotlib for two features we cannot do it for data with a lot of variables.\par
+{\pntext\f0 5.\tab}Data Preprocessing or handling missing values.\par
+{\pntext\f0 6.\tab}Handling NaN and NaT values.\par
+{\pntext\f0 7.\tab}Find the Nature of data\par
+{\pntext\f0 8.\tab}Assign the data to x and y depending on the data where x is always the input.\par
+{\pntext\f0 9.\tab}Split the data for training and testing.\par
+{\pntext\f0 10.\tab}Call the algorithm from sklearn\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Practical in Python of Simple Linear Regression:\par
+
+\pard\li1440\sa200\sl276\slmult1\b0\i\fs24 Import numpy as np, pandas as pd,matplotlib.pyplot as plt and seaborn as sns.\i0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Import the data using pandas\par
+{\pntext\f1\'B7\tab}In the following data, we have 2 features Number of claims in the total payment.\par
+{\pntext\f1\'B7\tab}This is simple linear regression as we have only 2 features to work on.\par
+{\pntext\f1\'B7\tab}We perform some basic steps.\par
+{\pntext\f1\'B7\tab}W plot the histogram to make inferences as to when and in which area the mode is not working\par
+{\pntext\f1\'B7\tab}Find the correlation of the data.\par
+{\pntext\f1\'B7\tab}Plot the Scatterplot Graph.\par
+{\pntext\f1\'B7\tab}Plot the pair plot.\par
+{\pntext\f1\'B7\tab}We can also find the outliers fro the matplotlib boxplot or seaborn boxplot .\par
+{\pntext\f1\'B7\tab}We will assign the features to X&Y.\par
+
+\pard\li1440\sa200\sl276\slmult1\i x=data.iloc[:,:1] (Assigning no of clients to x )\par
+y=data.iloc[:,1:] (Assigning total payment to y )\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i0 Plotting the scatter plot with x and y and then we can add title and xlabel and ylabel to the scatter plot.\par
+{\pntext\f1\'B7\tab}Split the Record for timing and testing.\par
+
+\pard\li1440\sa200\sl276\slmult1\i Import the model from sklearn.\par
+From sklearn.model_selection import train_test_split.\par
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)\fs22\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\i0\fs24 2 test size says 20% of data is used for testing andd other for trying ,0 in random state defined the value we wanna pass for random state of model.\par
+{\pntext\f1\'B7\tab}We check the number of data in training and trying by checking the shape\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Model Building with sklearn:\b0\fs22\par
+
+\pard\li720\sa200\sl276\slmult1\i from sklearn.linear_model import linearregression\par
+lin_rag=linearregression()\par
+We then train the model\par
+lin_red.fit(x_train,y_train)\par
+lin_reg.coef_ gives the slope or m .\par
+lin_reg.intercept_ gives the intercept or c .\par
+plt.scatter(x_train,y_train,color=\rquote red\rquote )\par
+plt.plot(x_train,lin_reg.predict(x_train),color=green)\par
+
+\pard\sa200\sl276\slmult1\b\i0\fs28 Testing the Model :\b0\fs22\par
+
+\pard\li720\sa200\sl276\slmult1\i\fs24 ypred-lin_red.predict(x_test)\par
+ypred  # Returns y\rquote\par
+x_test\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\i0 We can then check with the data to see the difference .\par
+{\pntext\f1\'B7\tab}We then will calculate all the error.\par
+
+\pard\sa200\sl276\slmult1\b\fs28 Error Estimation in python \fs24 :\b0\fs22\par
+
+\pard\li720\sa200\sl276\slmult1\i\fs24 from sklearn.metrics import mean_squared_error,r2_score\par
+RMSE=np.sqrt(mean_squared_error(y_test,ypred)\par
+rsq=r2_score(y_test,ypred)\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1\i0 Print both the RMSE and R2 .\par
+{\pntext\f1\'B7\tab}We will get the performance of the model as the output\par
+
+\pard\sa200\sl276\slmult1\b\fs28 How to perform Forecasting :\b0\fs22\par
+
+\pard\li720\sa200\sl276\slmult1\i\fs24 unseen_pred=lin_reg.predict_(np.array([[108]]))\i0\par
+
+\pard\sa200\sl276\slmult1 #We use 108 as we know the value of it so to check we give 108.\par
+So by  passing values into the function we can get the unseen values.\par
+}
+ 
